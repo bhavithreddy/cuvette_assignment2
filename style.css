@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+nav {
+    background: #6F6AF7;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+label.logo {
+    font-family: 'Delius Unicase', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.checbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    order: 2;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-right: 30px;
+}
+
+nav ul li a i {
+    color: white;
+}
+
+.search-container {
+    position: relative;
+    width: 175px;
+    border-radius: 8px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.search-container input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+}
+
+.main_container{
+    display: flex;
+    gap: 40px;
+    position: absolute;/* The gap between the divs */
+}
+.left_container{
+    float: left; /* Makes the divs align side by side */
+    box-sizing: border-box;
+    width: 400px;
+    height: 400px;
+    margin-top: 90px;
+    margin-left: 160px;
+    border-radius: 20px ;
+
+}
+.left_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right_container{
+    margin-top: 90px;
+    margin-left: 20px;
+    background: #E5D8FF;
+    width: 700px;
+    height: 390px;
+    top: 289px;
+    left: 634px;
+    gap: 0px;
+    border-radius: 20px ;
+    border: 6px solid #FFFFFF
+    box-shadow: 3px 5px 27px 0px #00000040 inset;
+    word-wrap: break-word;
+    overflow: auto; /* Change to hidden if you don't want a scrollbar */
+    padding: 10px; /* Optional padding ox-sizing: border-box
+    border: 1px solid #ccc; /* Optional border */
+}
+.right_container p{
+    font-family: DM Sans;font-size: 20px;font-weight: 400;line-height: 51.82px;text-align: left; color: #6F7373;
+}
+
+.social_icons{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: fixed;
+    top: 250px;
+    left:1420px;
+    cursor: pointer;
+
+}
+.whatsapp, .insta, .twitter {
+    width: 88px;              /* Example width, adjust as needed */
+    height: 65px;             /* Example height, adjust as needed */
+    margin-left: 10px;
+    border: 3px;
+    cursor: pointer;
+    border-radius:15px;
+    gap:2px;
+    margin-bottom: 10px;
+    /* Adds space between icons */
+}
+.social_icons img{
+    height: 100%;
+    width:100%;
+    object-fit: contain;
+    background-size: cover;
+
+}
+
+.boxes{
+    top: 550px;
+    left: 190px;
+    justify-content: flex-start;
+    flex-direction: row;
+    display: flex;
+    gap: 100px;
+    position: absolute;
+
+}
+.box1,.box2, .box3,.box4{
+     width: 220px;
+     height: 60px;
+    border-radius: 12px;
+    box-shadow: 0px 9px 31px 0px #00000066;
+    word-wrap: break-word; /* Ensures long words wrap within the div */
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    color: #FFFFFF;
+ }
+.box1{
+    background: #929DFF;
+}
+.box2{
+    background: #734CF2;
+}
+.box3{
+    background: #D288FF;
+}
+.box4{
+    background: #000000;
+}
+.boxes p{
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.chat{
+    width: 145px;
+    position: fixed;
+    height: 100px;
+    margin-top: 550px;
+    margin-left: 1270px;
+    z-index: 999;
+    cursor: pointer;
+}
+.footer{
+
+    display: flex;
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    margin-top: 730px;
+    margin-left: 160px;
+    margin-bottom: 40px;
+    background: #6F6AF7;
+    border-radius: 21px;
+    gap: 100px;
+
+}
+.footer-left{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 70px;
+    gap: 50px;
+
+
+}
+.footer1,.footer2,.footer3{
+    width: 200px;
+    height: 70px;
+    position: relative;
+    border-radius: 22px;
+    box-shadow: 0px 6px 35px 0px #00000063;
+
+}
+.footer1{
+    background: #BCE0F6;
+    font-family: DM Sans;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 62.54px;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+}
+.footer2{
+    border: 2px solid #FFFFFF;
+    font-family: DM Sans;font-size: 25px;font-weight: 400;line-height: 62.54px;letter-spacing: 0.04em;text-align: center;color:white;
+}
+.footer3{
+    border: 2px solid #FFFFFF;
+    font-family: DM Sans;font-size: 25px;font-weight: 400;line-height: 62.54px;letter-spacing: 0.04em;text-align: center; color: #FFFFFF;
+}
+.footer-right{
+
+    position: relative;
+    width: 800px;
+    height:450px;
+    background: #FFFFFF;
+    top: 30px;
+    border-radius: 20px;
+
+}
+.footer-right h2{
+    font-family: DM Sans;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 45.99px;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    letter-spacing: 0.105em;
+    width: 500px;
+    height: 36px;
+}
+.info{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: start;
+
+}
+.next{
+    width: 170px;
+    height: 50px;
+    border-radius: 9px;
+    color: white;
+    background: black;
+    margin-top: 50px;
+    margin-left: 600px;
+}
+.next p{
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: 30px;
+}
+
+
+@
